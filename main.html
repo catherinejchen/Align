@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>FaceTracking</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js"></script>
+    <script src="https://www.auduno.com/clmtrackr/build/clmtrackr.min.js"></script>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body>
+    
+    <div class="end-container">
+    <img src="images/logo.png" class="logo-main end" alt="logo">
+
+</div>
+
+<div class="end-product">
+<div class= "instructions">
+<img src="images/number1.png" class="dot">
+<h2 class="show-me">Show me what your slouch looks like.</h2>
+
+    <div class="slouch-button">
+        <button type="button" class="calibrated-btn" onclick="calibrateSlouch()">Calibrate</button>
+    </div> 
+ </div>
+ <div class= "instructions">
+<img src="images/number2.png" class="dot">
+<h2 class="show-me">Show me your ideal posture!</h2>
+<div class="posture-button">
+    <button class="calibrated-btn" onclick="calibrateUpright()">Calibrate</button>
+    </div> 
+    </div>
+</div>
+
+    
+    
+<div class="slouching">
+    <p id="text"></p></div>
+    <button class="calibrated-btn" onclick="slouched()">I'll do better!</button>
+    
+
+    <!--Our Javascript-->
+    <script src="Script.js"></script>
+</body>
+
+</html>

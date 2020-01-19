@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+body {
+	background-image: linear-gradient(#FED35B,#F2A720);
+	height:100vh;
+}
+
+.opening-title {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 10vh;
+	color: white;
+}
+
+p {
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 3vh;
+}
+.logo-main {
+	width: 240px;
+	height: auto;
+}
+
+.page-container {
+	text-align: center;
+ 	position: fixed;
+  top: 42%;
+  left: 24%;
+  margin-top: -50px;
+  margin-left: -100px;
+
+}
+
+.get-started {
+
+padding: 9px 36px;
+margin-top: 10px;
+color: #D99C3D;
+font-family: 'Open Sans', sans-serif;
+font-weight: bold;
+font-size: 24px;
+border-style: none;
+background: #FFFFFF;
+box-shadow: 0px 4px 16px #D99C3D;
+border-radius: 24px;
+
+}
+
+.proper-posture {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 5vh;
+	color: white;
+}
+
+.posture-container {
+	display:inline-block;
+	text-align: center;
+ 	position: fixed;
+  top: 42%;
+  left: 29%;
+  margin-top: -75px;
+  margin-left: -100px;
+}
+
+.posture-img {
+	width: 200px;
+	height: auto;
+	float: left;
+	margin-right: 10px;
+}
+
+.posture-sub {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	color: #D99C3D;
+	margin-top: 10px;
+	margin-bottom: -5px;
+	float: left;
+}
+.posture-tips {
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 110%;
+	font-weight: bold;
+	margin-top: 10px;
+	text-align: left;
+	line-height: 200%;
+	float: right;
+	
+}
+
+.info-subs {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2vh;
+	color: black;
+	line-height: 150%
+
+}
+.info-card {
+	background-color:  rgba(255,255,255,0.5);
+	display: flex;
+	margin-top:10px;
+	margin-bottom: 10px;
+	padding: 20px;
+	width:80%;
+	box-shadow: 0px 4px 18px #D99C3D;
+	border-radius: 16px;
+	display: inline-block;
+
+
+}
+.posture-card {
+	background-color:  white;
+	display: flex;
+	margin-top:10px;
+	margin-bottom: 10px;
+	padding: 20px;
+	width:525px;
+	box-shadow: 0px 4px 18px #D99C3D;
+	border-radius: 16px;
+	display: inline-block;
+
+}
+/**dealing with main calibration page from this point forward */
+
+.calibrated-btn {
+
+padding: 9px 36px;
+margin-top: 10px;
+margin-left: 20px;
+color: #D99C3D;
+font-family: 'Open Sans', sans-serif;
+font-weight: bold;
+font-size: 18px;
+border-style: none;
+background: #FFFFFF;
+box-shadow: 0px 4px 20px rgba(217, 156, 61, 0.75);
+border-radius: 24px;
+}
+
+span.dot{
+position: relative;
+  background: #fff;
+  border-radius: 50%;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+    width: 50px;
+   height:50px;
+
+  }
+
+
+.dot {
+	width:75px;
+	height: auto;
+	display: flex;
+}
+
+}
+
+.end {
+	width: 125px;
+	height: auto;
+	text-align: center;
+}
+
+.end-container {
+	text-align: center;
+	padding-top: 30px;
+}
+
+.show-me {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 2.5vh;
+	margin-left:20px;
+	color: white;
+	float: right;
+}
+
+.instructions {
+	display: flex;
+}
+
+.end-product {
+	text-align: center;
+	width: 50%;
+	margin: auto;
+}
+
+#text {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+}
+
+.slouching {
+	text-align: center;
+}

@@ -1,22 +1,33 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>FaceTracking</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js"></script>
-    <script src="https://www.auduno.com/clmtrackr/build/clmtrackr.min.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles.css" />
+
+
+  <!-- Our CSS -->
+    <link/>
+  
+    <title>Align - Home</title>
 </head>
 
 <body>
-    <button onclick="calibrateSlouch()">Press to calibrate slouch position</button>
-    <button onclick="calibrateUpright()">Press to calibrate upright position</button>
-    <p id="text"></p>
-    <button onclick="slouched()">yes ive slouched</button>
-    <script src="Script.js"></script>
+    <div class="page-container">
+        <div class="intro">
+            <h1 class="opening-title"> Hi, welcome to <img src="images/logo.png" class="logo-main" alt="logo"/> !</h1>
+            <p>We help fix your posture to ensure a healthier future.</p>
+        </div>
+        <div class="start-button">
+            <button class="get-started" onClick="window.location.href='posture.html'" >Get Started</button>
+        </div>
+    </div>
 </body>
 
 </html>

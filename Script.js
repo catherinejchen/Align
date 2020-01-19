@@ -13,6 +13,7 @@ var slouchHeight;
 var uprightHeight;
 var time;
 var timers = [];
+var audio = document.getElementById("myAudio");
 
 var w = 640,
     h = 480;
@@ -102,8 +103,14 @@ function check() {
 
 function playSound() {
     document.getElementById("text").innerHTML = "you have slouched";
+    playAudio();
 }
 
 function slouched() {
     document.getElementById("text").innerHTML = "";
+    audio.pause();
+}
+
+function playAudio(){
+    audio.play();
 }
