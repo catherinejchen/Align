@@ -1,12 +1,3 @@
-// var video = document.getElementById('video');
-
-// if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-//     navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
-//         video.srcObject = stream;
-//         video.play();
-//     });
-// }
-
 var capture;
 var tracker;
 var slouchHeight;
@@ -57,7 +48,6 @@ function draw() {
         fill(map(i, 0, positions.length, 0, 360), 50, 100);
         ellipse(positions[i][0], positions[i][1], 4, 4);
         text(i, positions[i][0], positions[i][1]);
-        // console.log(positions[33][1]);
     }
 
     if (positions.length > 0) {
