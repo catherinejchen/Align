@@ -4,6 +4,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background-image: linear-gradient(#FED35B,#F2A720);
+	background-attachment: fixed;
 	height:100vh;
 }
 
@@ -18,6 +19,7 @@ p {
 	color: white;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 3vh;
+	margin-bottom: 0;
 }
 
 .logo-main {
@@ -213,6 +215,8 @@ position: relative;
 }
 
 .reset-button{
+	margin-top: 500px;
+	margin-bottom: 20px;
 	width: 100%;
 	text-align: center;
 }

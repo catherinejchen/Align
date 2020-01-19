@@ -16,13 +16,18 @@ function setup() {
             width: w,
             height: h
         }
-    }, function () {
+    },
+    function () {
         console.log('capture ready.')
     });
     capture.elt.setAttribute('playsinline', '');
-    createCanvas(w, h);
+    var cnv = createCanvas(w, h);
     capture.size(w, h);
+    var x = (window.innerWidth - width) / 2;
+    var y = (window.innerHeight - height) / 2 + 100;
+    cnv.position(x, y);
     capture.hide();
+
 
     colorMode(HSB);
 
@@ -48,7 +53,7 @@ function draw() {
     for (var i = 0; i < positions.length; i++) {
         fill(map(i, 0, positions.length, 0, 360), 50, 100);
         ellipse(positions[i][0], positions[i][1], 4, 4);
-        text(i, positions[i][0], positions[i][1]);
+        // text(i, positions[i][0], positions[i][1]);
     }
 
     if (positions.length > 0) {
@@ -93,7 +98,8 @@ function check() {
 }
 
 function playSound() {
-    document.getElementById("text").innerHTML = "It looks like you're slouching! ☹ Sit up and try again...";
+    // document.getElementById("text").innerHTML = "It looks like you're slouching! ☹ Sit up and try again...";
+    window.scrollTo(0,document.body.scrollHeight);
     showButton();
     playAudio();
 }
