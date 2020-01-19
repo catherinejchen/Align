@@ -3,7 +3,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-image: url('./images/bg-img.png');
+	background-image: url('./images/bg-img.PNG');
 	/* background-image: linear-gradient(#FED35B,#F2A720); */
 	background-attachment: fixed;
 	/* overflow:hidden; */
