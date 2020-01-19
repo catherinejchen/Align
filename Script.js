@@ -92,7 +92,7 @@ function check() {
 }
 
 function playSound() {
-    document.getElementById("text").innerHTML = "you have slouched";
+    document.getElementById("text").innerHTML = "It looks like you're slouching.";
     playAudio();
 }
 
