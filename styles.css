@@ -3,8 +3,10 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-image: linear-gradient(#FED35B,#F2A720);
+	background-image: url('./images/bg-img.png');
+	/* background-image: linear-gradient(#FED35B,#F2A720); */
 	background-attachment: fixed;
+	/* overflow:hidden; */
 	height:100vh;
 }
 
@@ -55,6 +57,7 @@ p {
 	font-weight: bold;
 	font-size: 5vh;
 	color: white;
+	margin-bottom: 30px;
 }
 
 .posture-container {
@@ -73,7 +76,7 @@ p {
 	width: 200px;
 	height: auto;
 	float: left;
-	margin-right: 10px;
+	margin-left: 20px;
 }
 
 .posture-sub {
@@ -90,11 +93,11 @@ p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 110%;
 	font-weight: bold;
-	margin-top: 10px;
+	margin-top: 15px;
 	text-align: left;
-	line-height: 200%;
+	line-height: 300%;
 	float: right;
-	
+	margin-right: 20px;
 }
 
 .info-container{
@@ -106,20 +109,21 @@ p {
 	margin: 15px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 2vh;
-	color: black;
-	line-height: 200%
+	color: #D99C3D;;
+	line-height: 200%;
+	display: inline;
 }
 
 .info-card {
-	background-color:  rgba(255,255,255,0.5);
-	display: flex;
-	margin-top:10px;
-	margin-bottom: 10px;
-	padding: 20px;
-	width:80%;
+	background-color:rgba(255,255,255);
+	margin-top: 30px;
+	margin-bottom: 0px;
+	padding: 10px 10px 15px 45px;
+	width: 35%;
 	box-shadow: 0px 4px 18px #D99C3D;
 	border-radius: 16px;
 	display: inline-block;
+	font-weight: bold;
 }
 
 .posture-card {
@@ -176,7 +180,6 @@ position: relative;
 .dot {
 	width:75px;
 	height: 75px;
-	display: flex;
 }
 
 .end {
@@ -227,4 +230,12 @@ position: relative;
 
 canvas {
 	transform: scale(0.75);
+}
+
+.how-it-works {
+	text-align: left;
+}
+
+.start-button {
+	margin-top: 30px;
 }
