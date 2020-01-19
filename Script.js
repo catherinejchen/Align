@@ -36,6 +36,7 @@ function setup() {
     tracker.init();
     tracker.start(capture.elt);
     hideButton();
+    hideSuccess();
 }
 
 function draw() {
@@ -70,6 +71,7 @@ function calibrateSlouch() {
     if (positions.length > 0) {
         slouchHeight = positions[33][1];
         console.log('slouch calibrated');
+        showSuccess();
     }
 }
 
@@ -78,6 +80,7 @@ function calibrateUpright() {
     if (positions.length > 0) {
         uprightHeight = positions[33][1];
         console.log('up right calibrated');
+        showSuccess2();
     }
 }
 
@@ -126,4 +129,23 @@ function showButton(){
     cnv.position(x, y);
     var hiddenButton = document.getElementById("reset-button");
     hiddenButton.style.display = "block";
+}
+
+function showSuccess(){
+    var success = document.getElementById("success-text");
+    success.style.display = "block";
+    $("#success-text").fadeOut(3000);
+}
+
+function showSuccess2(){
+    var success = document.getElementById("other-success-text");
+    success.style.display = "block";
+    $("#other-success-text").fadeOut(3000);
+}
+
+function hideSuccess(){
+    var success = document.getElementById("success-text");
+    success.style.display = "none";
+    var success2 = document.getElementById("other-success-text");
+    success2.style.display = "none";  
 }
