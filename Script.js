@@ -29,6 +29,7 @@ function setup() {
     tracker = new clm.tracker();
     tracker.init();
     tracker.start(capture.elt);
+    hideButton();
 }
 
 function draw() {
@@ -86,21 +87,33 @@ function check() {
                         clearTimeout(timers[i]);
                     }
                 }
-            }, 5000));
+            }, 3000));
         }
     }
 }
 
 function playSound() {
-    document.getElementById("text").innerHTML = "you have slouched";
+    document.getElementById("text").innerHTML = "It looks like you're slouching! ☹ Sit up and try again...";
+    showButton();
     playAudio();
 }
 
 function slouched() {
     document.getElementById("text").innerHTML = "";
     audio.pause();
+    hideButton();
 }
 
 function playAudio(){
     audio.play();
+}
+
+function hideButton() {
+    var hiddenButton = document.getElementById("reset-button");
+    hiddenButton.style.display = "none";
+}
+
+function showButton(){
+    var hiddenButton = document.getElementById("reset-button");
+    hiddenButton.style.display = "block";
 }

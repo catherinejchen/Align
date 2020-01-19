@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
 body {
+	margin: 0;
+	padding: 0;
 	background-image: linear-gradient(#FED35B,#F2A720);
 	height:100vh;
 }
@@ -17,6 +19,7 @@ p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 3vh;
 }
+
 .logo-main {
 	width: 240px;
 	height: auto;
@@ -24,27 +27,25 @@ p {
 
 .page-container {
 	text-align: center;
- 	position: fixed;
-  top: 42%;
-  left: 24%;
-  margin-top: -50px;
-  margin-left: -100px;
-
+	padding-top: 30vh;
 }
 
-.get-started {
+.get-started{
+	padding: 9px 36px;
+	margin-top: 10px;
+	color: #D99C3D;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	border-style: none;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 16px #D99C3D;
+	border-radius: 24px;
+}
 
-padding: 9px 36px;
-margin-top: 10px;
-color: #D99C3D;
-font-family: 'Open Sans', sans-serif;
-font-weight: bold;
-font-size: 24px;
-border-style: none;
-background: #FFFFFF;
-box-shadow: 0px 4px 16px #D99C3D;
-border-radius: 24px;
-
+.get-started:hover{
+	cursor: pointer;
+	opacity: 0.7;
 }
 
 .proper-posture {
@@ -55,13 +56,15 @@ border-radius: 24px;
 }
 
 .posture-container {
-	display:inline-block;
+	/* display:inline-block;
 	text-align: center;
  	position: fixed;
   top: 42%;
   left: 29%;
   margin-top: -75px;
-  margin-left: -100px;
+  margin-left: -100px; */
+ 	text-align: center;
+    padding-top: 20vh;
 }
 
 .posture-img {
@@ -79,6 +82,7 @@ border-radius: 24px;
 	margin-bottom: -5px;
 	float: left;
 }
+
 .posture-tips {
 	color: black;
 	font-family: 'Open Sans', sans-serif;
@@ -91,13 +95,19 @@ border-radius: 24px;
 	
 }
 
+.info-container{
+	text-align: center;
+	padding-top: 30vh;
+}
+
 .info-subs {
+	margin: 15px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 2vh;
 	color: black;
-	line-height: 150%
-
+	line-height: 200%
 }
+
 .info-card {
 	background-color:  rgba(255,255,255,0.5);
 	display: flex;
@@ -108,9 +118,8 @@ border-radius: 24px;
 	box-shadow: 0px 4px 18px #D99C3D;
 	border-radius: 16px;
 	display: inline-block;
-
-
 }
+
 .posture-card {
 	background-color:  white;
 	display: flex;
@@ -123,6 +132,8 @@ border-radius: 24px;
 	display: inline-block;
 
 }
+
+
 /**dealing with main calibration page from this point forward */
 
 .calibrated-btn {
@@ -138,6 +149,11 @@ border-style: none;
 background: #FFFFFF;
 box-shadow: 0px 4px 20px rgba(217, 156, 61, 0.75);
 border-radius: 24px;
+}
+
+.calibrated-btn:hover{
+	cursor: pointer;
+	opacity: 0.7;
 }
 
 span.dot{
@@ -157,10 +173,8 @@ position: relative;
 
 .dot {
 	width:75px;
-	height: auto;
+	height: 75px;
 	display: flex;
-}
-
 }
 
 .end {
@@ -196,6 +210,11 @@ position: relative;
 #text {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
+}
+
+.reset-button{
+	width: 100%;
+	text-align: center;
 }
 
 .slouching {
