@@ -215,7 +215,7 @@ position: relative;
 }
 
 .reset-button{
-	margin-top: 500px;
+	margin-top: 400px;
 	margin-bottom: 20px;
 	width: 100%;
 	text-align: center;
@@ -223,4 +223,8 @@ position: relative;
 
 .slouching {
 	text-align: center;
+}
+
+canvas {
+	transform: scale(0.75);
 }

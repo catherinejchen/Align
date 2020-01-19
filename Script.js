@@ -5,9 +5,10 @@ var uprightHeight;
 var time;
 var timers = [];
 var audio = document.getElementById("myAudio");
-
 var w = 640,
     h = 480;
+var cnv;
+var x, y;
 
 function setup() {
     capture = createCapture({
@@ -21,11 +22,11 @@ function setup() {
         console.log('capture ready.')
     });
     capture.elt.setAttribute('playsinline', '');
-    var cnv = createCanvas(w, h);
     capture.size(w, h);
-    var x = (window.innerWidth - width) / 2;
-    var y = (window.innerHeight - height) / 2 + 100;
+    cnv = createCanvas(w, h);
     cnv.position(x, y);
+    x = (window.innerWidth - width) / 2;
+    y = (window.innerHeight - height) / 2 + 40;
     capture.hide();
 
 
@@ -86,6 +87,7 @@ function check() {
         if (((slouchHeight - uprightHeight) / 2) + uprightHeight < positions[33][1]) {
             timers.push(setTimeout(function() {
                 if (((slouchHeight - uprightHeight) / 2) + uprightHeight < positions[33][1]) {
+                    window.scrollTo(0,document.body.scrollHeight);
                     playSound();
                     for (var i = 0; i < timers.length; i++)
                     {
@@ -98,8 +100,6 @@ function check() {
 }
 
 function playSound() {
-    // document.getElementById("text").innerHTML = "It looks like you're slouching! ☹ Sit up and try again...";
-    window.scrollTo(0,document.body.scrollHeight);
     showButton();
     playAudio();
 }
@@ -115,11 +115,15 @@ function playAudio(){
 }
 
 function hideButton() {
+    y = (window.innerHeight - height) / 2 + 90;
+    cnv.position(x, y);
     var hiddenButton = document.getElementById("reset-button");
     hiddenButton.style.display = "none";
 }
 
 function showButton(){
+    y = (window.innerHeight - height) / 2 + 40;
+    cnv.position(x, y);
     var hiddenButton = document.getElementById("reset-button");
     hiddenButton.style.display = "block";
 }
